@@ -25,6 +25,35 @@ El objeto `evento.type` mostró el tipo de evento registrado (por ejemplo, `"cli
 
 ## Ejercicio 4: Eventos input y submit
 
+| Prueba                                  | Que paso en la pantalla                                                                              | Se recargo la pagina (Si/No) |
+| --------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------- |
+| Escribir en el campo nombre             | El texto "Hola, ..." cambia letra por letra en tiempo real                                           | No                           |
+| Enviar sin preventDefault               | El texto "Enviado" aparece un instante y desaparece inmediatamente debido a que la página se recarga | Si                           |
+| Enviar con preventDefault, correo sin @ | Aparece el mensaje de advertencia en rojo indicando "Correo no valido: falta @"                      | No                           |
+| Enviar con preventDefault, correo con @ | Aparece el mensaje de éxito indicando "Enviado: " seguido del correo ingresado                       | No                           |
+
 ## Ejercicio 5: Clases y objetos
 
+| Objeto  | nombre  | precio | descripcion()      | conDescuento(0.25) |
+| ------- | ------- | ------ | ------------------ | ------------------ |
+| laptop  | Laptop  | 2500   | Laptop - S/2500.00 | 1875.00            |
+| mouse   | Mouse   | 45     | Mouse - S/45.00    | 33.75              |
+| teclado | Teclado | 120    | Teclado - S/120.00 | 90.00              |
+| monitor | Monitor | 680    | Monitor - S/680.00 | 510.00             |
+
+Usar una clase permite reutilizar la misma estructura y métodos lógicos para crear múltiples objetos de forma rápida, evitando duplicar código HTML a mano. Además, facilita el mantenimiento, ya que cualquier cambio en la presentación o lógica se actualiza automáticamente para todos los elementos generados.
+
 ## Ejercicio 6: DOM, eventos y objetos juntos
+
+| Prueba          | Total que muestra la pagina | Correcto (Si/No) |
+| --------------- | --------------------------- | ---------------- |
+| Cuaderno 12.50  |                             |                  |
+| + Lapicero 3.20 |                             |                  |
+| + Mochila 89.90 |                             |                  |
+| Sin Number()    |                             |                  |
+
+| Pieza  | Linea de tu codigo donde aparece | Para que sirve |
+| ------ | -------------------------------- | -------------- |
+| DOM    |                                  |                |
+| Evento |                                  |                |
+| Objeto |                                  |                |
