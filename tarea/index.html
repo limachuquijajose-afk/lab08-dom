@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tarea: Registro de Rutina de Ejercicios</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 640px;
+        margin: 30px auto;
+        padding: 0 20px;
+      }
+      section {
+        border: 1px solid #ccc;
+        padding: 16px;
+        margin-bottom: 16px;
+        border-radius: 6px;
+      }
+      .error {
+        color: #c0392b;
+        font-weight: bold;
+      }
+      .exito {
+        color: #27ae60;
+        font-weight: bold;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      button.eliminar {
+        background: #e74c3c;
+        color: white;
+        border: none;
+        padding: 4px 8px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      button.eliminar:hover {
+        background: #c0392b;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Registro de Rutina de Ejercicios</h1>
+
+    <section>
+      <h2>Agregar Ejercicio</h2>
+      <form id="formEjercicio">
+        <input
+          id="ejNombre"
+          type="text"
+          placeholder="Nombre del ejercicio"
+          required
+        /><br /><br />
+        <input
+          id="ejPeso"
+          type="number"
+          step="0.5"
+          placeholder="Peso (kg)"
+          required
+        /><br /><br />
+        <input
+          id="ejReps"
+          type="number"
+          placeholder="Repeticiones"
+          required
+        /><br /><br />
+        <button type="submit">Registrar Serie</button>
+      </form>
+      <p id="mensajeValidacion"></p>
+    </section>
+
+    <section>
+      <h2>Series Registradas</h2>
+      <ul id="listaEjercicios"></ul>
+      <p>
+        <strong>Volumen Total de la Sesión:</strong>
+        <span id="volumenTotal">0</span> kg
+      </p>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
