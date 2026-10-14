@@ -45,15 +45,15 @@ Usar una clase permite reutilizar la misma estructura y métodos lógicos para c
 
 ## Ejercicio 6: DOM, eventos y objetos juntos
 
-| Prueba          | Total que muestra la pagina | Correcto (Si/No) |
-| --------------- | --------------------------- | ---------------- |
-| Cuaderno 12.50  |                             |                  |
-| + Lapicero 3.20 |                             |                  |
-| + Mochila 89.90 |                             |                  |
-| Sin Number()    |                             |                  |
+| Prueba          | Total que muestra la pagina                               | Correcto (Si/No) |
+| --------------- | --------------------------------------------------------- | ---------------- |
+| Cuaderno 12.50  | 12.50                                                     | Si               |
+| + Lapicero 3.20 | 15.70                                                     | Si               |
+| + Mochila 89.90 | 105.60                                                    | Si               |
+| Sin Number()    | El precio llegó como texto y no muestra el total correcto | No               |
 
-| Pieza  | Linea de tu codigo donde aparece | Para que sirve |
-| ------ | -------------------------------- | -------------- |
-| DOM    |                                  |                |
-| Evento |                                  |                |
-| Objeto |                                  |                |
+| Pieza  | Linea de tu codigo donde aparece                              | Para que sirve                                                                                                         |
+| ------ | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| DOM    | `const titulo = document.querySelector("#titulo");` (Línea 4) | Seleccionar y modificar elementos de la estructura HTML desde JavaScript para cambiar texto, estilos o agregar nodos.  |
+| Evento | `btnSumar.addEventListener("click", (evento) => {` (Línea 16) | Escuchar las acciones del usuario (como clics, inputs o envíos) para ejecutar funciones específicas en respuesta.      |
+| Objeto | `const laptop = new Producto("Laptop", 2500);` (Línea 68)     | Modelar datos y estructurar lógica mediante instancias creadas a partir de clases con sus propios atributos y métodos. |
